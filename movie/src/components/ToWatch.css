@@ -1,0 +1,111 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #c9e4ff;
+}
+#towatch {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #c9e4ff;
+}
+
+.towatch-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.towatch-container h1 {
+  font-size: 3rem;
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 20px;
+  color: var(--title);
+}
+.towatch-container h2 {
+  font-size: 2rem;
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--sub-title);
+  text-align: left;
+}
+
+.genre-buttons {
+  margin-top: -50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  gap: 20px;
+}
+
+.genre-buttons button {
+  background-color: #fff;
+  color: var(--sub-title);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 1rem;
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.genre-buttons button:hover {
+  background-color: #c9e4ff;
+  transform: translateY(-2px);
+}
+
+.genre-buttons button.active {
+  background-color: #8ca9ff;
+  color: #fff;
+}
+
+.movie-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+.movie-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 366px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 420px;
+  /* margin-bottom: 10px; */
+  object-fit: fill;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.movie-card h3 {
+  font-size: 1rem;
+  text-align: center;
+  /* margin-bottom: 6px; */
+}
+
+.movie-card p {
+  font-size: 1rem;
+  color: #f5c518;
+  text-align: center;
+  margin-bottom: 20px;
+}
